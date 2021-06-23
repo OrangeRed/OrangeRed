@@ -19,9 +19,9 @@
 </p>
 
 ### About me
-- Love for science, innovation and the cutting edge. \
-- Passionate about problem solving and automation. \
-- I am currently working on some of my side projects. \
+- Love for science, innovation and the cutting edge. 
+- Passionate about problem solving and automation. 
+- I am currently working on some of my side projects. 
 - Spend my free time immersing in and learning Japanese. 
 
 <hr>
