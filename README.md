@@ -18,11 +18,11 @@
 	</a>
 </p>
 
-### :orange_book: &nbsp; About me
+### :orange_book:&nbsp; About me
 &nbsp;&nbsp;&nbsp;:satellite: &nbsp;Love for science, innovation and the cutting edge. \
 &nbsp;&nbsp;&nbsp;:heartbeat: &nbsp;Passionate about problem solving and automation. \
-&nbsp;&nbsp;&nbsp;:computer: &nbsp; I am currently working on some of my side projects. \
-&nbsp;&nbsp;&nbsp;:writing_hand: &nbsp; Spend my free time immersing in and learning Japanese. 
+&nbsp;&nbsp;&nbsp;:computer: &nbsp;I am currently working on some of my side projects. \
+&nbsp;&nbsp;&nbsp;:writing_hand: &nbsp;Spend my free time immersing in and learning Japanese. 
 
 <hr>
 
