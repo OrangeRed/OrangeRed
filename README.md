@@ -18,15 +18,15 @@
 	</a>
 </p>
 
-### :orange_book:&nbsp; About me
-&nbsp;&nbsp;&nbsp;:satellite: &nbsp;Love for science, innovation and the cutting edge. \
-&nbsp;&nbsp;&nbsp;:heartbeat: &nbsp;Passionate about problem solving and automation. \
-&nbsp;&nbsp;&nbsp;:computer: &nbsp;I am currently working on some of my side projects. \
-&nbsp;&nbsp;&nbsp;:writing_hand: &nbsp;Spend my free time immersing in and learning Japanese. 
+### About me
+- Love for science, innovation and the cutting edge. \
+- Passionate about problem solving and automation. \
+- I am currently working on some of my side projects. \
+- Spend my free time immersing in and learning Japanese. 
 
 <hr>
 
-### :gear: Languages and Tools
+### Languages and Tools
 <p>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="30" height="30"/></code>
