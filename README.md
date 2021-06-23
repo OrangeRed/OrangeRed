@@ -13,10 +13,11 @@
 </p>
 
 ### About me
-- Love for science, innovation and the cutting edge. 
-- Passionate about problem solving and automation. 
-- I am currently working on some of my side projects. 
-- Spend my free time immersing in and learning Japanese. 
+- Always curious and constantly learning.
+- Love science, technology and the cutting edge. 
+- Passionate about problem solving and automating tasks. 
+- Currently working on side projects and solving coding challenges. 
+- During my free time you can find me immersing in and learning Japanese. 
 
 <hr>
 
