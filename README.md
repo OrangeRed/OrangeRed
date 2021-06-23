@@ -19,22 +19,22 @@
 </p>
 
 ### :orange_book: &nbsp; About me
-&nbsp;&nbsp;&nbsp;:satellite: &nbsp;Love for science, innovation and the cutting edge.
-&nbsp;&nbsp;&nbsp;:heartbeat: &nbsp;Passionate about problem solving and automation.
-&nbsp;&nbsp;&nbsp;:computer: &nbsp; I am currently working on some of my side projects.
+&nbsp;&nbsp;&nbsp;:satellite: &nbsp;Love for science, innovation and the cutting edge. \
+&nbsp;&nbsp;&nbsp;:heartbeat: &nbsp;Passionate about problem solving and automation. \
+&nbsp;&nbsp;&nbsp;:computer: &nbsp; I am currently working on some of my side projects. \
 &nbsp;&nbsp;&nbsp;:writing_hand: &nbsp; Spend my free time immersing in and learning Japanese. 
 
 <hr>
 
 ### :gear: Languages and Tools
 <p>
-	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="30" height="30"/></code>
+	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="mysql" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="30" height="30"/></code>
-	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-plain-wordmark.svg" alt="docker" width="30" height="30"/></code>
+	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-plain.svg" alt="docker" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html5" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="30" height="30"/></code>
