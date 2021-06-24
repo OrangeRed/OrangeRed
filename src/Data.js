@@ -29,7 +29,7 @@ export const about = {
   title: "Dmitriy Kagno",
   image: {
       source: './images/profile.jpg',
-      description: 'avatar'
+      description: 'profile'
   },
   description: [
     'Born and raised in NYC.',

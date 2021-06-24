@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledAbout } from './About.styled';
+import { FaHeart } from 'react-icons/fa';
 
 const About = ({
   about,
@@ -11,6 +12,8 @@ const About = ({
   return (
     <StyledAbout device={device} {...props}>
       <h1>{about.title}</h1>
+      <hr></hr>
+      <h3>Software <><FaHeart className='heart'/></> Engineer</h3>
       <div className='test-box'>
       <div className="box-section image-container">
         <img 
@@ -22,7 +25,6 @@ const About = ({
       <div className="info-grid">
         <div className="box-section grid-column">
           <div>
-            {/* <h4>About me:</h4> */}
             <ul> 
               {about.description.map(element => 
                 <li> <span> {element} </span> </li>

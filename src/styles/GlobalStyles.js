@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
   h1 {
     color: ${({ theme }) => theme.title};
     font-size: 62px;
+    padding-bottom: 5px;
     text-align: center;
     position: relative;
     z-index: 2;
@@ -29,12 +30,28 @@ export const GlobalStyles = createGlobalStyle`
     position: relative;
     z-index: 2;
   }
+  h3 {
+    color: ${({ theme }) => theme.title};
+    font-size: 24px;
+    padding-top: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
   h4 {
     color: ${({ theme }) => theme.accent};
     font-size: 18px;
     padding-bottom: 10px;
     position: relative;
     z-index: 2;
+  }
+  hr {
+    width: 400px;
+    margin: auto;
+    z-index: 2;
+  }
+  .heart {
+    color: ${({ theme }) => theme.accent};
   }
   p {
     font-size: 16px;
