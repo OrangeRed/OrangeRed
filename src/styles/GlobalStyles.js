@@ -84,14 +84,14 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0 24px 0 24px;
   }
   .section-container {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 36px;
   }
   .projects-container {
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .footer-container {
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .box-section {
     background-color: ${({ theme }) => theme.secondaryBackground};
@@ -111,7 +111,7 @@ export const GlobalStyles = createGlobalStyle`
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 48px;
+    padding: 24px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

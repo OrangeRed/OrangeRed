@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.div`
-  .test-box {
+  
+  .title-box {
+    margin-bottom: 30px
+  }
+  .info-box {
     display: flex;
   }
   .image-container {

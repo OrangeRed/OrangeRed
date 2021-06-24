@@ -33,6 +33,7 @@ export const about = {
   },
   description: [
     'Born and raised in NYC.',
+    'Can read and write upside down.',
     'Always curious and constantly learning.',
     'Love science, technology and the cutting edge.',
     'Passionate about problem solving and automating tasks.',
