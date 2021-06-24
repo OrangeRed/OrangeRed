@@ -34,9 +34,9 @@ export const StyledMenu = styled.nav`
       text-decoration: none;
       transition: color 0.1s linear;  
       height: 30px;
-      color: ${({ theme }) => theme.button};
+      color: ${({ theme }) => theme.title};
       &:hover {
-        color: ${({ theme }) => theme.buttonHover};
+        color: ${({ theme }) => theme.accent};
       }
     }
   }

@@ -1,6 +1,5 @@
 import React from 'react'
 import { StyledInterests } from './Interests.styled';
-import { FaPencilAlt, FaCode, FaBookmark } from 'react-icons/fa';
 
 const Interests = ({
   interests,
@@ -10,7 +9,7 @@ const Interests = ({
 
   return (
     <StyledInterests device={device} {...props}>
-      <h2> Interests </h2>
+      <h2> Experience and Interests </h2>
       <div className='box-section'>
         {interests.map(element => 
           <div className='interests-container'>

@@ -1,14 +1,19 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.div`
-  .image-container img {
-    padding-left: 45px;
-    padding-right: 45px;
-    max-width: 100%;
-    width: 400px;
+  .test-box {
+    display: flex;
+  }
+  .image-container {
+    flex: 50%;
+
+    img {
+      padding-left: 45px;
+      padding-right: 45px;
+      max-width: 100%;
+    }
   }
   .info-grid {
-    margin-top: 4px;
     display: grid;
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
@@ -23,6 +28,9 @@ export const StyledAbout = styled.div`
     grid-template-rows: auto;
   }
   @media ${({ device }) => device.tablet} {
+    .test-box {
+      flex-direction: column;
+    }
     .info-grid {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;

@@ -10,7 +10,7 @@ const OtherProjects = ({
 
   return (
     <StyledOtherProjects device={device} {...props}>
-        <h2> Projects </h2>
+        <h2> Github Projects </h2>
         <div className="projects-grid">
           {projects.map((project, index) =>
             <a

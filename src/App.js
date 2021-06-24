@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
-// import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
 
 import { GlobalStyles } from './styles/GlobalStyles';
 import { lightTheme, darkTheme } from './styles/Themes';
@@ -12,7 +10,6 @@ import Navbar from './components/navbar/Navbar';
 import Menu from './components/menu/Menu';
 import OutsideAlterter from './components/OutsideAlerter';
 import About from './components/about/About';
-// import MainProject from './components/mainProject/MainProject';
 import Interests from './components/interests/Interests';
 import OtherProjects from './components/otherProjects/OtherProjects';
 import Footer from './components/footer/Footer';
@@ -26,8 +23,6 @@ class App extends Component {
       isMobile: false,
       isDarkMode: true,
       menuOpen: false,
-      imageDisplayOpen: false,
-      imageIndex: 0,
     };
   }
 
@@ -71,19 +66,8 @@ class App extends Component {
     if (menuOpen) { this.setState({ menuOpen: false }) };
   }
 
-  handleImageClick = (index) => {
-    this.setState({
-      imageDisplayOpen: true,
-      imageIndex: index
-    })
-  }
-
   render() {
     const theme = this.state.isDarkMode ? darkTheme : lightTheme;
-    // const logo = this.state.isDarkMode ? 'images/logo-light.png' : 'images/logo-dark.png';
-    // const { imageDisplayOpen, imageIndex } = this.state;
-    // const images = instaQR.secondaryImages
-    // const temp = ['iOS,  Android and Web App Design', 'Software Development and Lifecycle', 'Agile and Project Management'];
     
     return (
       <ThemeProvider theme={theme}>
@@ -91,7 +75,6 @@ class App extends Component {
         <GlobalStyles device={device} />
           <div className="max-width-container">
             <Navbar
-              // logo={logo}
               links={socialLinks}
               isMobile={this.state.isMobile}
               isDarkMode={this.state.isDarkMode} 
@@ -121,11 +104,6 @@ class App extends Component {
                 interests={interests}
                 device={device}
               />
-              
-              {/* <About 
-                about={about}
-                device={device}
-              /> */}
             </div>
 
             <div className="projects-container">
@@ -142,25 +120,6 @@ class App extends Component {
               />
             </div>
           </div>
-
-          {/* {imageDisplayOpen && (
-            <Lightbox
-              mainSrc={images[imageIndex]}
-              nextSrc={images[(imageIndex + 1) % images.length]}
-              prevSrc={images[(imageIndex + images.length - 1) % images.length]}
-              onCloseRequest={() => this.setState({ imageDisplayOpen: false })}
-              onMovePrevRequest={() =>
-                this.setState({
-                  imageIndex: (imageIndex + images.length - 1) % images.length,
-                })
-              }
-              onMoveNextRequest={() =>
-                this.setState({
-                  imageIndex: (imageIndex + 1) % images.length,
-                })
-              }
-            />
-          )} */}
         </>
       </ThemeProvider>
     );

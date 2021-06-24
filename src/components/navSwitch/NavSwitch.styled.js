@@ -17,10 +17,10 @@ export const StyledNavSwitch = styled.div`
     width: 50px;
   }
   .icon-moon {
-    color: ${({ theme }) => theme.title};
+    color: ${({ theme }) => theme.secondaryBackground};
   }
   .icon-sun {
-    color: ${({ theme }) => theme.title};
+    color: ${({ theme }) => theme.secondaryBackground};
   }
   .ball {
     background-color: ${({ theme }) => theme.secondaryBackground};

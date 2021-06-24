@@ -11,6 +11,7 @@ const About = ({
   return (
     <StyledAbout device={device} {...props}>
       <h1>{about.title}</h1>
+      <div className='test-box'>
       <div className="box-section image-container">
         <img 
           src={about.image.source} 
@@ -21,7 +22,7 @@ const About = ({
       <div className="info-grid">
         <div className="box-section grid-column">
           <div>
-            <h4>About me:</h4>
+            {/* <h4>About me:</h4> */}
             <ul> 
               {about.description.map(element => 
                 <li> <span> {element} </span> </li>
@@ -30,6 +31,8 @@ const About = ({
           </div>
         </div>
       </div>
+      </div>
+      
     </StyledAbout>
   )
 }

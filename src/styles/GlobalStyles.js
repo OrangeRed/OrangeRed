@@ -15,39 +15,26 @@ export const GlobalStyles = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     transition: background 0.2s linear;
   }
-  h1, h2, h3, h4, h5, h6 {
-    color: ${({ theme }) => theme.title};
-  }
   h1 {
+    color: ${({ theme }) => theme.title};
     font-size: 62px;
     text-align: center;
     position: relative;
     z-index: 2;
-    margin-bottom: -40px;
-  }
-  @media ${({ device }) => device.tablet} {
-    h1 {
-      margin-bottom: -25px;
-      font-size: 40px;
-    }
   }
   h2 {
+    color: ${({ theme }) => theme.title};
     font-size: 36px;
     text-align: center;
     position: relative;
     z-index: 2;
-    margin-bottom: 10px;
-  }
-  @media ${({ device }) => device.tablet} {
-    h2 {
-      margin-bottom: 10px;
-      font-size: 28px;
-    }
   }
   h4 {
+    color: ${({ theme }) => theme.accent};
     font-size: 18px;
-    padding-tip: 10px;
     padding-bottom: 10px;
+    position: relative;
+    z-index: 2;
   }
   p {
     font-size: 16px;
@@ -63,6 +50,7 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
     li {
       font-size: 16px;
+      margin-right: 20px;
       margin-bottom: 6px;
       padding-top: 6px;
       padding-bottom: 6px;

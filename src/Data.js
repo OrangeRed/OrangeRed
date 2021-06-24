@@ -32,6 +32,7 @@ export const about = {
       description: 'avatar'
   },
   description: [
+    'Born and raised in NYC.',
     'Always curious and constantly learning.',
     'Love science, technology and the cutting edge.',
     'Passionate about problem solving and automating tasks.',
@@ -60,20 +61,20 @@ export const projects = [
     title: "Image OCR Translator",
     url: "https://github.com/OrangeRed/image-ocr-translator",
     description: [
-      'test 1',
-      'test 2',
-      'test 3'
+      'Allows users to extract words from images using OCR technology.',
+      'Uses Google Translate API to serve translations of extracted words.',
+      'React web application with Nodejs backend to handle server calls.',
+      'Front end designed using React Material UI and styled-components.',
     ]
   },
   {
-    title: "Twenty Four Game",
+    title: "Twenty Four",
     url: "https://github.com/OrangeRed/TwentyFour",
     description: [
-      'test 1',
-      'test 2',
-      'test 3',
-      'test 4',
-      'test 5'
+      'Enables users to endlessly practice arithmetic with random number generation.',
+      'Uses backtracking to ensure solutions are straightforward and open-ended.',
+      'Built to be accessible on almost any device, computer or mobile.',
+      'Simple Javascript and CSS application hosted on Github.',
     ]
   },
 ]

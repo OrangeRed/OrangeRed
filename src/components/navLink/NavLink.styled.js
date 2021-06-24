@@ -5,7 +5,7 @@ export const StyledNavLink = styled.a`
   align-items: center;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   .navLink-icon {
     margin-right: ${({ hasTitle }) => hasTitle ? '10px' : '0'};
   }

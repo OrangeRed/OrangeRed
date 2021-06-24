@@ -17,9 +17,9 @@ export const StyledNavbar = styled.nav`
         margin: 0 20px;
         text-decoration: none;
         transition: color 0.1s linear;
-        color: ${({ theme }) => theme.button};
+        color: ${({ theme }) => theme.title};
         &:hover {
-          color: ${({ theme }) => theme.buttonHover};
+          color: ${({ theme }) => theme.accent};
         }
       }
     }

@@ -6,7 +6,6 @@ import NavLink from '../navLink/NavLink';
 import NavSwitch from '../navSwitch/NavSwitch';
 
 const Navbar = ({
-  // logo,
   links, 
   isMobile, 
   isDarkMode, 
@@ -14,15 +13,6 @@ const Navbar = ({
   onButtonClick, 
   ...props 
 }) => {
-
-  // const navLogo = (
-  //   <div className="nav-logo">
-  //     <img 
-  //       src={logo} 
-  //       alt="logo"
-  //     />
-  //   </div>
-  // );
 
   const navLinkButtons = (
     <div className="nav-links">
@@ -58,7 +48,6 @@ const Navbar = ({
 
   const expandedNavbar = (
     <div className="navbar-container">
-      {/* {navLogo} */}
       {navLinkButtons}
       {navToggle}
     </div>
@@ -66,7 +55,6 @@ const Navbar = ({
 
   const compactNavbar =  (
     <div className="navbar-container">
-      {/* {navLogo} */}
       {navButton}
     </div>
   );
@@ -81,7 +69,6 @@ const Navbar = ({
 }
 
 Navbar.propTypes = {
-  // logo: PropTypes.node.isRequired,
   links: PropTypes.array.isRequired,
   isMobile: PropTypes.bool.isRequired,
   isDarkMode: PropTypes.bool.isRequired,
