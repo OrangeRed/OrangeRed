@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledAbout } from './About.styled';
-import { FaHeart } from 'react-icons/fa';
 
 const About = ({
   about,
@@ -14,7 +13,7 @@ const About = ({
       <div className='title-box'>
         <h1>{about.title}</h1>
         <hr></hr>
-        <h3>Software <><FaHeart className='heart'/></> Engineer</h3>
+        <h3>Software Engineer</h3>
       </div>
 
       <div className='info-box'>

@@ -46,16 +46,15 @@ export const GlobalStyles = createGlobalStyle`
     z-index: 2;
   }
   hr {
+    height: 2px;
+    background-color: ${({ theme }) => theme.accent};
+    border: none;
     width: 400px;
     margin: auto;
     z-index: 2;
     @media ${({ device }) => device.mobileL} {
       width: 100%;
     }
-  }
-  .heart {
-    color: ${({ theme }) => theme.accent};
-    height: 18px;
   }
   p {
     font-size: 16px;
