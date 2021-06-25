@@ -21,7 +21,7 @@ export const socialLinks = [
   {
     title: "Resume",
     icon: IoMdDocument,
-    url: "http://DmitriyKagno.me/images/Resume_Dmitriy_Kagno.docx"
+    url: "http://DmitriyKagno.me/images/Resume_Dmitriy_Kagno.pdf"
   }
 ]
 
