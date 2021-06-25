@@ -49,6 +49,9 @@ export const GlobalStyles = createGlobalStyle`
     width: 400px;
     margin: auto;
     z-index: 2;
+    @media ${({ device }) => device.mobileL} {
+      width: 100%;
+    }
   }
   .heart {
     color: ${({ theme }) => theme.accent};
