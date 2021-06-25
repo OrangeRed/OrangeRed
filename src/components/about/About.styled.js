@@ -8,15 +8,18 @@ export const StyledAbout = styled.div`
     display: flex;
   }
   .image-container {
-    flex: 50%;
+    flex: 40%;
+    display: flex;
+    padding-bottom: 24px;
+    justify-content: flex-end;
 
     img {
-      padding-left: 45px;
-      padding-right: 45px;
-      max-width: 100%;
+      width: 323px;
+      height: 323px;
     }
   }
   .info-grid {
+    flex: 60%;
     display: grid;
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
@@ -31,8 +34,11 @@ export const StyledAbout = styled.div`
     grid-template-rows: auto;
   }
   @media ${({ device }) => device.tablet} {
-    .test-box {
+    .info-box {
       flex-direction: column;
+    }
+    .image-container {
+      justify-content: center;
     }
     .info-grid {
       -ms-grid-columns: 1fr;

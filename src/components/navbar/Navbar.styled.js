@@ -5,6 +5,7 @@ export const StyledNavbar = styled.nav`
   .navbar-container {
     display: flex;
     height: 26px;
+    cursor: pointer;
     align-items: flex-start;
     justify-content: flex-end;
     

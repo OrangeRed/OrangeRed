@@ -28,7 +28,7 @@ export const socialLinks = [
 export const about = {
   title: "Dmitriy Kagno",
   image: {
-      source: './images/profile.jpg',
+      source: './images/profile.png',
       description: 'profile'
   },
   description: [

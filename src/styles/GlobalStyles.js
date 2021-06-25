@@ -99,21 +99,13 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.secondaryBackground};
     border-radius: 2px;
   }
-  .image-container {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    img {
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
   .grid-column {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding: 24px;
+    padding-left: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

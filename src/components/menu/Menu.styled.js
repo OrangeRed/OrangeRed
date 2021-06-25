@@ -15,6 +15,7 @@ export const StyledMenu = styled.nav`
     
     .menu-close {
       color: ${({ theme }) => theme.title};
+      cursor: pointer;
       float: right;
     }
   }

@@ -6,6 +6,7 @@ export const StyledNavSwitch = styled.div`
     position: absolute;
   }
   .label {
+    cursor: pointer;
     background-color: ${({ theme }) => theme.accent};
     display: flex;
     align-items: center;
