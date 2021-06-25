@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledOtherProjects } from './OtherProjects.styled';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const OtherProjects = ({
   device,
@@ -21,7 +22,7 @@ const OtherProjects = ({
               rel="noopener noreferrer" 
             >
               <div className="link-container">
-                <h4>{project.title}</h4>
+                <h4>{project.title} <FaExternalLinkAlt className='FaExternalLinkAlt'/> </h4>
                 <ul>
                   {project.description.map(element => 
                     <li> <span> {element} </span> </li>

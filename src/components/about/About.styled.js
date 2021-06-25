@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledAbout = styled.div`
-  
+export const StyledAbout = styled.div`  
   .title-box {
     margin-bottom: 30px
   }

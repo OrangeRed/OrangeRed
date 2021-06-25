@@ -21,6 +21,10 @@ export const StyledOtherProjects = styled.div`
       }
       .link-container {
         padding-top: 20px;
+
+        .FaExternalLinkAlt {
+          height: 16px;
+        }
       }
       h4 {
           margin-top: 10px;

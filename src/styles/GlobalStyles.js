@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     -moz-box-sizing:border-box; 
     -webkit-box-sizing:border-box; 
     -ms-box-sizing:border-box;
+    user-select: none;
   }
   body {
     background: ${({ theme }) => theme.background};
@@ -52,6 +53,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   .heart {
     color: ${({ theme }) => theme.accent};
+    height: 18px;
   }
   p {
     font-size: 16px;
