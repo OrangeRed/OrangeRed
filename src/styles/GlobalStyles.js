@@ -8,7 +8,6 @@ export const GlobalStyles = createGlobalStyle`
     -moz-box-sizing:border-box; 
     -webkit-box-sizing:border-box; 
     -ms-box-sizing:border-box;
-    user-select: none;
   }
   body {
     background: ${({ theme }) => theme.background};
