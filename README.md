@@ -13,19 +13,22 @@
 </p>
 
 ### About me
+
 - Always curious and constantly learning.
-- Love science, technology and the cutting edge. 
-- Passionate about problem solving and automating tasks. 
-- Currently working on side projects and solving coding challenges. 
-- During my free time you can find me immersing in and learning Japanese. 
+- Love science, technology and the cutting edge.
+- Passionate about problem solving and automating tasks.
+- Currently working on side projects and solving coding challenges.
+- During my free time you can find me immersing in and learning Japanese.
 
 <hr>
 
 ### Languages and Tools
+
 <p>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="30" height="30"/></code>
+	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/icons/mongodb/mongodb-original-wordmark.svg" alt="mongo" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="mysql" width="30" height="30"/></code>
 	<code> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="30" height="30"/></code>
