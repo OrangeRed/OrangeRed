@@ -27,14 +27,14 @@ export const socialLinks = [
   {
     title: "Resume",
     icon: IoMdDocument,
-    url: "http://DmitriyKagno.me/images/Resume_Dmitriy_Kagno.pdf",
+    url: "http://DmitriyKagno.me/Resume_Dmitriy_Kagno.pdf",
   },
 ];
 
 export const about = {
   title: "Dmitriy Kagno",
   image: {
-    source: "./images/profile.png",
+    source: "./profile.png",
     description: "profile",
   },
   description: [
