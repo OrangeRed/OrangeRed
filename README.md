@@ -1,16 +1,19 @@
 <h1  align="center">
-	<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="30px" /> 
+	<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="40px" height="40px" /> 
 	Hi! I'm Dmitriy.
 </h1>
 
 <p align='center'> 
 	<a  href="https://DmitriyKagno.me">
-			<img src="https://img.shields.io/badge/webpage-%28c101.svg?&style=for-the-badge&logo=Houzz&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp; 
-	</a>
-	<a href="mailto:Kagno.Dmitriy@gmail.com">
-		<img src="https://img.shields.io/badge/email-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp; 
+			<img src="https://img.shields.io/badge/webpage-%28c102.svg?&style=for-the-badge&logo=Houzz&logoColor=white" />
+	</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+	<!-- Remove Email because who even uses that anymore -->
+	<!-- <a href="mailto:Kagno.Dmitriy@gmail.com">
+		<img src="https://img.shields.io/badge/email-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" />
+	</a>&nbsp;&nbsp;&nbsp;&nbsp;  -->
 	<a href="https://www.linkedin.com/in/dmitriy-kagno/">
-		<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+	</a>&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 ### About me
