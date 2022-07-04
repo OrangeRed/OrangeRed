@@ -30,7 +30,7 @@
 	<a href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg" width="36" height="36" alt="NextJs" /></a>
 	<a href="https://prisma.io"><img src="https://www.prisma.io/images/favicon-32x32.png" width="36" height="36" alt="Prisma" /></a>
   <a href="https://planetscale.com"><img src="https://planetscale.com/favicon.svg" width="36" height="36" alt="PlanetScale" /></a>
-	<a href="https://www.github.com/OrangeRed" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" width="32" height="32" alt="Github"/></a>
+	<a href="https://www.github.com/OrangeRed" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" width="36" height="36" alt="Github"/></a>
 	<a href="https://endeavouros.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="36" height="36"/></a>
 	<a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" width="36" height="36"/></a>
 </p>
