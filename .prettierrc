@@ -1,0 +1,7 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": false,
+  "prettier.documentSelectors": ["**/*.astro"],
+  "plugins": ["./node_modules/prettier-plugin-astro"]
+}
