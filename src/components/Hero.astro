@@ -1,0 +1,53 @@
+---
+import type { IAvatar } from "@src/env"
+
+import { ABOUT_ME } from "@src/Data"
+const { description, title, currentJob } = ABOUT_ME
+
+export interface Props {
+  image: IAvatar
+}
+
+const { image } = Astro.props
+---
+
+<section
+  class="flex flex-col md:flex-row justify-between items-center py-6 px-3 border-orange-400 border-2"
+>
+  <img
+    class="h-60 w-60 rounded-full object-cover mx-3"
+    src={image.src}
+    alt={image.alt}
+  />
+  <div class="flex flex-col items-center w-full">
+    <h1 class="flex text-4xl sm:text-5xl pb-3 border-b-2 border-orange-400">
+      <img src="/hand_wave.gif" class="h-10 sm:h-11 mr-3" />
+      <span class="tracking-wide">{title}</span>
+    </h1>
+    <ol class="text-base sm:list-[circle]">
+      {
+        description.map((line) => {
+          return (
+            <li class="ml-2 sm:ml-10 my-3 tracking-wide">
+              {!line.includes("@") ? (
+                line
+              ) : (
+                <>
+                  {line.slice(0, line.indexOf("@"))}
+                  <a
+                    class="text-sky-400"
+                    href={currentJob.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @{currentJob.name}
+                  </a>
+                </>
+              )}
+            </li>
+          )
+        })
+      }
+    </ol>
+  </div>
+</section>
