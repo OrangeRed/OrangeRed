@@ -24,7 +24,6 @@ export const SOCIAL_LINKS = [
 
 export const AVATAR = {
   src: "/Dmitriy_Kagno_Avatar.png",
-  alt: "Dmitriy Kagno Avatar",
 }
 
 export const ABOUT_ME = {
