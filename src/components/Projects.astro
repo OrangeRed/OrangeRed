@@ -1,0 +1,79 @@
+---
+import type { IProjects } from "@src/env"
+import { Icon } from "astro-icon"
+
+export interface Props {
+  projects: IProjects[]
+}
+
+// <p class="w-full mb-3 font-normal leading-7">
+//     Some of the projects that I have built in my spare time
+//     <br />
+//     <!-- Most of them done over the weekend, between classes or at lunch.
+//     <br />
+//     Authored by me or in collaboration with other developers, colleagues and friends
+//     I found on the internet. -->
+//   </p>
+
+const { projects } = Astro.props
+---
+
+<section class="pb-6">
+  <h2
+    class="mb-4 text-3xl tracking-tight underline decoration-orange-400 decoration-2"
+  >
+    Projects
+  </h2>
+
+  <div class="grid grid-cols-1 gap-4">
+    {
+      projects.map((project) => {
+        return (
+          <div class="p-4 flex flex-col gap-2 rounded-xl border-t shadow-md shadow-black border-orange-400">
+            <header class="flex justify-between items-center">
+              <h2 class="text-xl font-semibold underline decoration-orange-400 decoration-2">
+                {project.title}
+              </h2>
+              <div class="flex items-center">
+                {project.liveUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon name="fa-solid:external-link-alt" />
+                  </a>
+                )}
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon name="fa:github" />
+                </a>
+              </div>
+            </header>
+
+            <ul class="flex gap-3 flex-wrap ml-2">
+              {project.tags?.map((tag) => {
+                return (
+                  <li class="flex bg-zinc-700 py-0.5 px-2 text-sm rounded-md shadow shadow-black cursor-default select-none">
+                    ✹ {tag}
+                  </li>
+                )
+              })}
+            </ul>
+
+            <p class="pt-3">{project.description}</p>
+          </div>
+        )
+      })
+    }
+  </div>
+</section>
+
+<style>
+  a {
+    @apply w-6 text-zinc-100 hover:text-orange-400 hover:scale-110 transition-all ml-3;
+  }
+</style>

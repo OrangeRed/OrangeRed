@@ -1,0 +1,36 @@
+---
+import type { IToolbox } from "@src/env"
+
+export interface Props {
+  toolbox: IToolbox
+}
+
+const { toolbox } = Astro.props
+---
+
+<section class="flex flex-col justify-between py-6 px-3 mb-8">
+  <h2
+    class="mb-4 text-3xl tracking-tight underline decoration-orange-400 decoration-2"
+  >
+    Technologies
+  </h2>
+  <p class="w-full mb-8 font-normal leading-7">
+    I love exploring new libraries, programing languages and frameworks.
+    <br />
+    Here is a list of technologies that I use for work and side projects.
+  </p>
+  <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
+    {
+      toolbox.map((tech) => {
+        return (
+          <div class="flex items-center gap-4">
+            <span class="w-16 h-16 flex items-center justify-center border-t shadow-black shadow-md border-orange-400 rounded-full">
+              <img class="w-9" alt={tech.title} src={tech.icon} />
+            </span>
+            <p class="text-lg">{tech.title}</p>
+          </div>
+        )
+      })
+    }
+  </div>
+</section>

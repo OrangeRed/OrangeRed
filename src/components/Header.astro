@@ -5,7 +5,7 @@ import { Icon } from "astro-icon"
 // TO-DO Add Themes to this header
 ---
 
-<section class="pb-6">
+<section>
   <ul class="nav-list">
     {
       SOCIAL_LINKS.map((link) => {
@@ -31,7 +31,7 @@ import { Icon } from "astro-icon"
 
 <style>
   .nav-list {
-    @apply justify-end inline-flex md:justify-start list-none gap-5 font-semibold uppercase  w-full;
+    @apply justify-end inline-flex md:justify-start list-none gap-5 font-semibold uppercase w-full;
   }
 
   .social-links-header {
