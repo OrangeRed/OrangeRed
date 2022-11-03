@@ -24,11 +24,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      // colors: {
-      //   theme: {
-      //     ...colors,
-      //   },
-      // },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [],
