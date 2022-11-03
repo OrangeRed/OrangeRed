@@ -4,7 +4,7 @@ import { AVATAR, TOOL_BOX } from "./Data"
 
 export type IAvatar = typeof AVATAR
 export type IToolbox = typeof TOOL_BOX
-export type IProjects = {
+export type IProject = {
   title: string
   githubUrl: string
   liveUrl?: string

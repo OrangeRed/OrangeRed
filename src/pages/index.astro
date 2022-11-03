@@ -2,17 +2,11 @@
 import Meta from "@src/components/Meta.astro"
 import Header from "@src/components/Header.astro"
 import Hero from "@src/components/Hero.astro"
-import Footer from "@src/components/Footer.astro"
-import Toolbox from "@src/components/Toolbox.astro"
+import Technologies from "@src/components/Technologies.astro"
 import Projects from "@src/components/Projects.astro"
+import Footer from "@src/components/Footer.astro"
 
-import {
-  SITE_TITLE,
-  SITE_DESCRIPTION,
-  AVATAR,
-  TOOL_BOX,
-  PROJECTS,
-} from "@src/Data"
+import { SITE_TITLE, SITE_DESCRIPTION, AVATAR } from "@src/Data"
 ---
 
 <!DOCTYPE html>
@@ -24,8 +18,8 @@ import {
   <body>
     <Header title={SITE_TITLE} />
     <Hero image={AVATAR} />
-    <Toolbox toolbox={TOOL_BOX} />
-    <Projects projects={PROJECTS} />
+    <Technologies />
+    <Projects />
     <Footer />
   </body>
 </html>
