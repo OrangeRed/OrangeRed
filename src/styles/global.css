@@ -1,3 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes LinearPan {
+  0%,
+  100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
+
+@layer utilities {
+  .text-fill-transparent {
+    background-size: 1600%;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .animate-linear {
+    animation: LinearPan 5s linear infinite;
+    -moz-animation: LinearPan 5s linear infinite;
+    -webkit-animation: LinearPan 5s linear infinite;
+  }
+}
+
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
@@ -24,23 +51,14 @@
 body {
   font-family: Verdana, sans-serif;
   margin: auto;
-  padding: 20px;
   max-width: 80ch;
   text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
 }
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-  color: #222;
-} */
+
+/* Assess if these are needed */
 a {
   color: #3273dc;
 }

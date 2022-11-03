@@ -25,12 +25,12 @@ export const AVATAR = {
 }
 
 export const ABOUT_ME = {
-  title: "Hi! I'm Dmitriy",
+  name: "Dmitriy Kagno",
   description: [
     "🌎 I am based in NYC",
     "💻 I currently work for @EcogyEnergy",
     "🧪 I love science, technology and trying new things",
-    "🇯🇵 I am learning Japanese in my free time through immersion",
+    "🇯🇵 I am learning Japanese through the power of immersion",
     "🇦 I use Arch by the way.",
   ],
   currentJob: {
