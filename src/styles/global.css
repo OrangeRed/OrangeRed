@@ -14,11 +14,11 @@
 
 @layer utilities {
   .text-fill-transparent {
-    background-size: 1600%;
     -webkit-text-fill-color: transparent;
   }
 
   .animate-linear {
+    background-size: 1600%;
     animation: LinearPan 5s linear infinite;
     -moz-animation: LinearPan 5s linear infinite;
     -webkit-animation: LinearPan 5s linear infinite;

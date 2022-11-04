@@ -27,14 +27,14 @@ export const AVATAR = {
 export const ABOUT_ME = {
   name: "Dmitriy Kagno",
   description: [
-    "🌎 I am based in NYC",
-    "💻 I currently work for @EcogyEnergy",
-    "🧪 I love science, technology and trying new things",
-    "🇯🇵 I am learning Japanese through the power of immersion",
-    "🇦 I use Arch by the way.",
+    "🌎 I am based in New York City.",
+    "💻 I currently work @",
+    "🧪 I love science, tech and trying new things.",
+    "🇯🇵 I am studying Japanese in my free time.",
+    "🇦 I also use Arch by the way.",
   ],
   currentJob: {
-    name: "EcogyEnergy",
+    name: "EcogyEnergy.",
     url: "https://EcogyEnergy.com",
   },
 }
