@@ -3,14 +3,12 @@ import { Icon } from "astro-icon"
 
 import { PROJECTS } from "@src/Data"
 import ProjectCard from "./ProjectCard"
+import Title from "./Title"
 ---
 
-<section class="pb-6 group/section">
+<section class="pb-6 px-3 group/section">
   <h2 class="mb-4 text-3xl tracking-tight">
-    <span
-      class="hover-underline group-hover/section:before:w-full group-hover/section:before:opacity-100"
-      >Projects</span
-    >
+    <Title title="Projects" client:visible />
   </h2>
   <p class="w-full mb-8 font-normal leading-7">
     I am an advocate of learning by doing.

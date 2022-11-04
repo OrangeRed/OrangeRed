@@ -18,7 +18,7 @@ export default function ProjectCard({ project, children }: Props) {
         currentTarget.style.setProperty("--mouse-x", `${x}px`)
         currentTarget.style.setProperty("--mouse-y", `${y}px`)
       }}
-      class="project-card group/card rounded-xl border-t border-zinc-700 shadow-md shadow-black hover:shadow-xl hover:shadow-black hover:border-orange-400 transition-all duration-500 ease-in-out"
+      class="project-card group/card rounded-xl border-t-2 border-zinc-600 shadow-md shadow-black hover:shadow-xl hover:shadow-black hover:border-orange-400 transition-all duration-500 ease-in-out"
     >
       <div class="flex flex-col p-4 gap-2">
         <header class="flex justify-between items-center ">
@@ -28,8 +28,7 @@ export default function ProjectCard({ project, children }: Props) {
           <div class="flex items-center">{children}</div>
         </header>
 
-        {/*  */}
-        <ul class="flex gap-3 flex-wrap ">
+        <ul class="flex gap-3 flex-wrap">
           {project.tags?.map((tag) => {
             return (
               <li class="flex bg-zinc-700 py-0.5 px-2 text-sm rounded-md shadow shadow-black cursor-default select-none">

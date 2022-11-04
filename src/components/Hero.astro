@@ -6,30 +6,41 @@ const { description, name, currentJob } = ABOUT_ME
 <section
   class="flex flex-col md:flex-row justify-between items-center px-3 mb-8 md:mt-8"
 >
+  <!-- Avatar -->
   <img
-    class="h-72 w-72 rounded-full object-cover shadow-black shadow-xl m-8"
+    class="h-72 w-72 m-8 rounded-full object-cover shadow-black shadow-2xl"
     src={image.src}
     alt="Dmitriy_Kagno_Avatar"
   />
+
   <div class="flex flex-col items-start w-full md:w-auto">
     <div class="flex flex-col justify-start md:justify-center">
+      <!-- Greeting -->
       <span class="flex items-end text-2xl pb-2">
         <img src="/hand_wave.gif" class="h-10 mr-3" />
         <span>Hi There, I'm</span>
       </span>
-      <h1 class="flex text-7xl pb-2 w-full">
+
+      <!-- Animated Text -->
+      <h1 class="flex text-7xl w-full">
         <span
-          class="bg-clip-text pb-2 text-fill-transparent animate-linear bg-gradient-to-r from-red-700 via-orange-400 to-yellow-300"
+          class="bg-clip-text pb-3 text-fill-transparent animate-linear bg-gradient-to-r from-red-700 via-orange-400 to-yellow-300"
           >{name}</span
         >
       </h1>
-      <hr class="border-zinc-600" />
     </div>
-    <ol class="text-base sm:list-[circle] list-inside">
+
+    <p class="text-xl my-2 w-full border-b border-zinc-600">
+      Here are some fun facts about me:
+    </p>
+    <ol class="sm:list-['~'] list-inside">
       {
-        description.map((line) => {
+        description.map((line, idx) => {
           return (
-            <li class="my-3 tracking-wide">
+            <li
+              class="mb-3 font-normal tracking-wide overflow-hidden typewriter whitespace-nowrap mr-auto"
+              style={{ animationDelay: `${3.5 * idx}s` }}
+            >
               {!line.includes("@") ? (
                 line
               ) : (
@@ -52,3 +63,17 @@ const { description, name, currentJob } = ABOUT_ME
     </ol>
   </div>
 </section>
+
+<style>
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .typewriter {
+    animation: typing 3s steps(40, end) 1s 1 normal both;
+  }
+</style>
