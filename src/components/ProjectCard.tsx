@@ -1,5 +1,3 @@
-import { useState } from "preact/hooks"
-
 import type { IProject } from "../env.d"
 
 interface Props {

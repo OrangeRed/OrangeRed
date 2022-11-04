@@ -1,15 +1,25 @@
-import { h } from "preact"
-import { useObserver } from "preact-intersection-observer"
+import { useState, useRef, useEffect } from "preact/hooks"
 
 const Title = ({ title }: { title: string }) => {
-  const [ref, inView] = useObserver()
+  const ref = useRef<HTMLSpanElement>(null)
+  const [isIntersecting, setIsIntersecting] = useState(false)
+
+  useEffect(() => {
+    if (ref && ref.current) {
+      const observer = new IntersectionObserver((entries) => {
+        setIsIntersecting(entries[0].isIntersecting)
+      }, {})
+
+      observer.observe(ref.current)
+    }
+  }, [])
 
   return (
     <span
       ref={ref}
       class={`
         hover-underline 
-        ${inView ? "before:w-full before:opacity-100" : ""}  
+        ${isIntersecting ? "before:w-full before:opacity-100" : ""}
       `}
     >
       {title}
