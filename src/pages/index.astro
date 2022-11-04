@@ -1,0 +1,25 @@
+---
+import Meta from "@src/components/Meta.astro"
+import Header from "@src/components/Header.astro"
+import Hero from "@src/components/Hero.astro"
+import Technologies from "@src/components/Technologies.astro"
+import Projects from "@src/components/Projects.astro"
+import Footer from "@src/components/Footer.astro"
+
+import { SITE_TITLE, SITE_DESCRIPTION, AVATAR } from "@src/Data"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Meta -->
+  <head>
+    <Meta title={SITE_TITLE} description={SITE_DESCRIPTION} image={AVATAR} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <Hero image={AVATAR} />
+    <Technologies />
+    <Projects />
+    <Footer />
+  </body>
+</html>

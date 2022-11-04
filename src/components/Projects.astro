@@ -1,0 +1,57 @@
+---
+import { Icon } from "astro-icon"
+
+import { PROJECTS } from "@src/Data"
+import ProjectCard from "./ProjectCard"
+---
+
+<section class="pb-6 group/section">
+  <h2 class="mb-4 text-3xl tracking-tight">
+    <span
+      class="hover-underline group-hover/section:before:w-full group-hover/section:before:opacity-100"
+      >Projects</span
+    >
+  </h2>
+  <p class="w-full mb-8 font-normal leading-7">
+    I am an advocate of learning by doing.
+    <br />
+    Here are some of the projects that I have built in my spare time.
+  </p>
+  <div class="grid grid-cols-1 gap-4">
+    {
+      PROJECTS.map((project) => {
+        return (
+          <ProjectCard project={project} client:visible>
+            {project.githubUrl && (
+              <a
+                class="z-20"
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name="fa:github" />
+              </a>
+            )}
+
+            {project.liveUrl && (
+              <a
+                class="z-20"
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name="fa-solid:external-link-alt" />
+              </a>
+            )}
+          </ProjectCard>
+        )
+      })
+    }
+  </div>
+</section>
+
+<style>
+  a {
+    @apply w-6 text-zinc-100 hover:text-orange-400 hover:scale-110 transition-all ml-3;
+  }
+</style>
