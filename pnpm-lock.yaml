@@ -9,6 +9,7 @@ specifiers:
   astro: ^1.6.0
   astro-icon: ^0.8.0
   preact: ^10.6.5
+  preact-intersection-observer: ^2.2.3
   tailwindcss: ^3.0.24
 
 dependencies:
@@ -21,6 +22,9 @@ dependencies:
   astro-icon: 0.8.0
   preact: 10.11.2
   tailwindcss: 3.2.1
+
+devDependencies:
+  preact-intersection-observer: 2.2.3_preact@10.11.2
 
 packages:
 
@@ -3472,6 +3476,14 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
+  /preact-intersection-observer/2.2.3_preact@10.11.2:
+    resolution: {integrity: sha512-qlx3aS8cGTDFY9uwWpNHCuwH8XuLDOyTpt8uvxqm4J1H2nywjWNWfMhAxfY5VqecDZ+MybG3WxhxhL9yArqEqw==}
+    peerDependencies:
+      preact: 10.x
+    dependencies:
+      preact: 10.11.2
+    dev: true
+
   /preact-render-to-string/5.2.6_preact@10.11.2:
     resolution: {integrity: sha512-JyhErpYOvBV1hEPwIxc/fHWXPfnEGdRKxc8gFdAZ7XV4tlzyzG847XAyEZqoDnynP88akM4eaHcSOzNcLWFguw==}
     peerDependencies:
@@ -3483,7 +3495,6 @@ packages:
 
   /preact/10.11.2:
     resolution: {integrity: sha512-skAwGDFmgxhq1DCBHke/9e12ewkhc7WYwjuhHB8HHS8zkdtITXLRmUMTeol2ldxvLwYtwbFeifZ9uDDWuyL4Iw==}
-    dev: false
 
   /preferred-pm/3.0.3:
     resolution: {integrity: sha512-+wZgbxNES/KlJs9q40F/1sfOd/j7f1O9JaHcW5Dsn3aUUOZg3L2bjpVUcKV2jvtElYfoTuQiNeMfQJ4kwUAhCQ==}
