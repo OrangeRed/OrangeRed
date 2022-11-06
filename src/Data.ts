@@ -39,7 +39,7 @@ export const ABOUT_ME = {
   },
 }
 
-export const TOOL_BOX = [
+export const TECHNOLOGIES = [
   {
     title: "TypeScript",
     icon: "/icons/typescript.svg",

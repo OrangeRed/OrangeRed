@@ -1,3 +1,4 @@
+import { h } from "preact"
 import { useState, useRef, useEffect } from "preact/hooks"
 
 const Title = ({ title }: { title: string }) => {

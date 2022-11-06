@@ -1,25 +1,134 @@
 ---
-import Meta from "@src/components/Meta.astro"
-import Header from "@src/components/Header.astro"
-import Hero from "@src/components/Hero.astro"
-import Technologies from "@src/components/Technologies.astro"
-import Projects from "@src/components/Projects.astro"
-import Footer from "@src/components/Footer.astro"
+import Icon from "astro-icon"
 
-import { SITE_TITLE, SITE_DESCRIPTION, AVATAR } from "@src/Data"
+import BaseLayout from "@src/layouts/BaseLayout.astro"
+
+import NavLinks from "@src/components/NavLinks"
+import Title from "@src/components/Title"
+import Hero from "@src/components/Hero"
+import Project from "@src/components/Project"
+
+import { SOCIAL_LINKS, PROJECTS, TECHNOLOGIES } from "@src/Data"
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <!-- Meta -->
-  <head>
-    <Meta title={SITE_TITLE} description={SITE_DESCRIPTION} image={AVATAR} />
-  </head>
-  <body>
-    <Header title={SITE_TITLE} />
-    <Hero image={AVATAR} />
-    <Technologies />
-    <Projects />
-    <Footer />
-  </body>
-</html>
+<BaseLayout>
+  <!-- Header Section -->
+  <nav class="px-3">
+    <ul class="flex justify-end md:justify-start list-none gap-5 w-full">
+      {
+        SOCIAL_LINKS.map((link) => {
+          return (
+            <NavLinks newTab url={link.url}>
+              <Icon class="w-[20px] h-[20px] mr-2" name={link.icon} />
+              <span class="hidden md:inline tracking-[0.2rem] font-semibold uppercase">
+                {link.title}
+              </span>
+            </NavLinks>
+          )
+        })
+      }
+    </ul>
+  </nav>
+
+  <!-- Hero + About me Section -->
+  <Hero />
+
+  <!-- Technologies Section -->
+  <section class="flex flex-col justify-between py-6 px-3 mb-8 group/section">
+    <!-- Technologies Title -->
+    <h2 class="mb-4 text-3xl tracking-tight">
+      <Title title="Technologies" client:visible />
+    </h2>
+    <!-- Technologies Blurb -->
+    <p class="w-full mb-8 font-normal leading-7">
+      I love exploring new libraries, programming languages and frameworks.
+      <br />
+      Here is a list of technologies that I use for work and side projects.
+    </p>
+    <!-- Technologies -->
+    <div class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3">
+      {
+        TECHNOLOGIES.map((tech) => {
+          return (
+            <div class="tech flex items-center gap-4 p-3 rounded-full group/tech border-zinc-800 border-b hover:border-orange-400 transition-all duration-500">
+              <div class="w-20 h-14 flex items-center justify-center border-t-2 shadow-black shadow-md border-zinc-600 group-hover/tech:border-orange-400 rounded-full transition-all duration-500">
+                <img class="w-8" alt={tech.title} src={tech.icon} />
+              </div>
+
+              <p class="text-lg w-full">{tech.title}</p>
+            </div>
+          )
+        })
+      }
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="pb-6 px-3 group/section">
+    <!-- Projects Title -->
+    <h2 class="mb-4 text-3xl tracking-tight">
+      <Title title="Projects" client:visible />
+    </h2>
+    <!-- Projects Blurb -->
+    <p class="w-full mb-8 font-normal leading-7">
+      I am an advocate of learning by doing.
+      <br />
+      Here are some of the projects that I have built in my spare time.
+    </p>
+    <!-- Projects -->
+    <div class="grid grid-cols-1 gap-4">
+      {
+        PROJECTS.map((project) => {
+          return (
+            <Project project={project} client:visible>
+              {project.githubUrl && (
+                <a
+                  class="z-20 w-6 text-zinc-100 hover:text-orange-400 hover:scale-110 transition-all ml-3"
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon name="fa:github" />
+                </a>
+              )}
+
+              {project.liveUrl && (
+                <a
+                  class="z-20 w-6 text-zinc-100 hover:text-orange-400 hover:scale-110 transition-all ml-3"
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon name="fa-solid:external-link-alt" />
+                </a>
+              )}
+            </Project>
+          )
+        })
+      }
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="px-3">
+    <ul
+      class="flex justify-end list-none gap-5 w-full border-t border-zinc-600 pt-3 mt-3"
+    >
+      {
+        SOCIAL_LINKS.map((link) => {
+          return (
+            <NavLinks newTab url={link.url}>
+              <Icon class="w-[20px] h-[20px] mr-2" name={link.icon} />
+            </NavLinks>
+          )
+        })
+      }
+    </ul>
+    <!-- Copyright -->
+    <div class="inline-flex justify-start w-full pt-3">
+      &copy; Copyright {new Date().getFullYear()} by Dmitriy Kagno.
+      <br />
+      All Rights Reserved.
+    </div>
+  </footer>
+</BaseLayout>

@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes linearPan {
+  0%,
+  100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .text-fill-transparent {
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Name Animation */
+  .animate-linear {
+    background-size: 1600%;
+    animation: linearPan 5s linear infinite;
+    -moz-animation: linearPan 5s linear infinite;
+    -webkit-animation: linearPan 5s linear infinite;
+  }
+
+  /* Animated Underline */
+  .hover-underline {
+    @apply relative before:content-[''] before:absolute before:-bottom-0.5 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-700 before:bg-orange-400;
+  }
+
+  /* White Shadow Effect */
+  .white-shadow {
+    /* This type of css can't happen with tailwind */
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y),
+      rgb(255, 255, 255, 0.1),
+      transparent 40%
+    );
+  }
+
+  .white-shadow-container {
+    @apply relative before:white-shadow before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-0 before:z-10 before:rounded-xl before:opacity-0 before:transition-all before:duration-500 hover:before:opacity-100;
+  }
+
+  .typewriter {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: typing;
+    animation-duration: 1s;
+    /* animation-timing-function: steps(40, end); */
+    /* animation-Delay: 2s; */
+    animation-iteration-count: 1;
+    animation-duration: normal;
+    animation-fill-mode: both;
+  }
+}
