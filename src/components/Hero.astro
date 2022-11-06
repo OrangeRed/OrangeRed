@@ -39,7 +39,10 @@ const { description, name, currentJob } = ABOUT_ME
           return (
             <li
               class="mb-3 font-normal tracking-wide overflow-hidden typewriter whitespace-nowrap mr-auto"
-              style={{ animationDelay: `${3.5 * idx}s` }}
+              style={{
+                animationDelay: `${1.5 * idx}s`,
+                animationTimingFunction: `steps(${line.length}, end)`,
+              }}
             >
               {!line.includes("@") ? (
                 line
@@ -74,6 +77,13 @@ const { description, name, currentJob } = ABOUT_ME
     }
   }
   .typewriter {
-    animation: typing 3s steps(40, end) 1s 1 normal both;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: typing;
+    animation-duration: 1s;
+    /* animation-timing-function: steps(40, end); */
+    /* animation-Delay: 2s; */
+    animation-iteration-count: 1;
+    animation-duration: normal;
+    animation-fill-mode: both;
   }
 </style>

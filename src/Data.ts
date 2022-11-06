@@ -28,7 +28,7 @@ export const ABOUT_ME = {
   name: "Dmitriy Kagno",
   description: [
     "🌎 I am based in New York City.",
-    "💻 I currently work @",
+    "💻 I currently work @EcogyEnergy.",
     "🧪 I love science, tech and trying new things.",
     "🇯🇵 I am studying Japanese in my free time.",
     "🇦 I also use Arch by the way.",
