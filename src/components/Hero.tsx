@@ -40,9 +40,9 @@ const Hero = () => {
                 }}
               >
                 {!line.includes("@") ? (
-                  <span class="m-0 sm:ml-3">{line}</span>
+                  <span class="m-0 sm:ml-1">{line}</span>
                 ) : (
-                  <span class="m-0 sm:ml-3">
+                  <span class="m-0 sm:ml-1">
                     {line.slice(0, line.indexOf("@"))}
                     <a
                       class="text-sky-400 hover:text-sky-600"

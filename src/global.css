@@ -21,6 +21,19 @@
   }
 }
 
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    filter: blur(1rem);
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0rem);
+    transform: translateX(0%);
+  }
+}
+
 @layer utilities {
   .text-fill-transparent {
     -webkit-text-fill-color: transparent;
@@ -58,9 +71,18 @@
     animation-name: typing;
     animation-duration: 1s;
     /* animation-timing-function: steps(40, end); */
-    /* animation-Delay: 2s; */
+    /* animation-delay: 2s; */
     animation-iteration-count: 1;
     animation-duration: normal;
     animation-fill-mode: both;
+  }
+
+  .slide-in {
+    /* animation: slide-in 0.5s forwards; */
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    /* animation-timing-function: ; */
+    /* animation-delay: var(--slide-in-delay); */
+    animation-fill-mode: forwards;
   }
 }

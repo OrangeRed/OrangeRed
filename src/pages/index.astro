@@ -9,6 +9,7 @@ import Hero from "@src/components/Hero"
 import Project from "@src/components/Project"
 
 import { SOCIAL_LINKS, PROJECTS, TECHNOLOGIES } from "@src/Data"
+import Technology from "@src/components/Technology"
 ---
 
 <BaseLayout>
@@ -34,7 +35,9 @@ import { SOCIAL_LINKS, PROJECTS, TECHNOLOGIES } from "@src/Data"
   <Hero />
 
   <!-- Technologies Section -->
-  <section class="flex flex-col justify-between py-6 px-3 mb-8 group/section">
+  <section
+    class="flex flex-col justify-between py-6 px-3 mb-8 group/title relative"
+  >
     <!-- Technologies Title -->
     <h2 class="mb-4 text-3xl tracking-tight">
       <Title title="Technologies" client:visible />
@@ -45,26 +48,32 @@ import { SOCIAL_LINKS, PROJECTS, TECHNOLOGIES } from "@src/Data"
       <br />
       Here is a list of technologies that I use for work and side projects.
     </p>
-    <!-- Technologies -->
-    <div class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3">
-      {
-        TECHNOLOGIES.map((tech) => {
-          return (
-            <div class="tech flex items-center gap-4 p-3 rounded-full group/tech border-zinc-800 border-b hover:border-orange-400 transition-all duration-500">
-              <div class="w-20 h-14 flex items-center justify-center border-t-2 shadow-black shadow-md border-zinc-600 group-hover/tech:border-orange-400 rounded-full transition-all duration-500">
-                <img class="w-8" alt={tech.title} src={tech.icon} />
-              </div>
 
-              <p class="text-lg w-full">{tech.title}</p>
-            </div>
-          )
-        })
-      }
-    </div>
+    <!-- Technologies -->
+    <Technology client:visible />
+    <noscript class="absolute translate-y-36 w-full">
+      <div
+        class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3 mt-10 sm:mt-0"
+      >
+        {
+          TECHNOLOGIES.map((tech) => {
+            return (
+              <div class="flex items-center group/tech rounded-full p-3 gap-4">
+                <div class="w-20 hover:bg-orange-700 h-14 ml-2 flex items-center justify-center border-t-2 shadow-black shadow-md border-zinc-600 group-hover/tech:border-orange-400 rounded-full transition-all duration-500 ">
+                  <img class="w-8" alt={tech.title} src={tech.icon} />
+                </div>
+
+                <p class="text-lg w-full">{tech.title}</p>
+              </div>
+            )
+          })
+        }
+      </div>
+    </noscript>
   </section>
 
   <!-- Projects Section -->
-  <section class="pb-6 px-3 group/section">
+  <section class="pb-6 px-3 group/title">
     <!-- Projects Title -->
     <h2 class="mb-4 text-3xl tracking-tight">
       <Title title="Projects" client:visible />

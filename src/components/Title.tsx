@@ -19,8 +19,12 @@ const Title = ({ title }: { title: string }) => {
     <span
       ref={ref}
       class={`
-        hover-underline 
-        ${isIntersecting ? "before:w-full before:opacity-100" : ""}
+        hover-underline
+        ${
+          isIntersecting
+            ? "before:w-full before:opacity-100"
+            : `group-hover/title:before:w-full group-hover/title:before:opacity-100`
+        }
       `}
     >
       {title}
