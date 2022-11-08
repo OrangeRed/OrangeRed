@@ -55,7 +55,7 @@ export const TECHNOLOGIES = [
   {
     title: "Javascript",
     icon: "./icons/javascript.svg",
-    url: "https://javascript.com/",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     title: "Astro",
@@ -79,7 +79,7 @@ export const TECHNOLOGIES = [
   },
   {
     title: "Serverless",
-    icon: "/icons/amazon-aws.svg",
+    icon: "/icons/lambda.svg",
   },
 ]
 
