@@ -43,37 +43,43 @@ export const TECHNOLOGIES = [
   {
     title: "TypeScript",
     icon: "/icons/typescript.svg",
+    url: "https://www.typescriptlang.org/",
   },
   {
     title: "React",
     icon: "/icons/react.svg",
+    url: "https://reactjs.org/",
   },
   {
     title: "TailwindCSS",
     icon: "/icons/tailwindcss.svg",
+    url: "https://tailwindcss.com/",
   },
   {
     title: "Javascript",
     icon: "./icons/javascript.svg",
+    url: "https://www.javascript.com/",
   },
   {
-    // https://astro.build/press/
     title: "Astro",
     icon: "/icons/astro-dark.svg",
+    url: "https://astro.build/",
   },
   {
     title: "Arch Linux",
     icon: "/icons/archlinux-256.svg",
+    url: "https://endeavouros.com/",
   },
   {
     title: "Next.js",
     icon: "/icons/nextjs.png",
+    url: "https://nextjs.org/",
   },
   {
     title: "Node.js",
     icon: "/icons/nodejs.svg",
+    url: "https://nodejs.org/en/",
   },
-
   {
     title: "AWS",
     icon: "/icons/amazon-aws.svg",

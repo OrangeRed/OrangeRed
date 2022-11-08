@@ -51,25 +51,6 @@ import Technology from "@src/components/Technology"
 
     <!-- Technologies -->
     <Technology client:visible />
-    <noscript class="absolute translate-y-36 w-full">
-      <div
-        class="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3 mt-10 sm:mt-0"
-      >
-        {
-          TECHNOLOGIES.map((tech) => {
-            return (
-              <div class="flex items-center group/tech rounded-full p-3 gap-4">
-                <div class="w-20 hover:bg-orange-700 h-14 ml-2 flex items-center justify-center border-t-2 shadow-black shadow-md border-zinc-600 group-hover/tech:border-orange-400 rounded-full transition-all duration-500 ">
-                  <img class="w-8" alt={tech.title} src={tech.icon} />
-                </div>
-
-                <p class="text-lg w-full">{tech.title}</p>
-              </div>
-            )
-          })
-        }
-      </div>
-    </noscript>
   </section>
 
   <!-- Projects Section -->
