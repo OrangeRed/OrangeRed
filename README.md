@@ -1,11 +1,31 @@
-<h1  align="center">
+<h1 align="center">
 	<img src="./public/hand_wave.gif" width="40px" height="40px" /> 
 	Hi! I'm Dmitriy.
 </h1>
 
 <p align='center'> 
-	<a  href="https://DmitriyKagno.me" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/portfolio-%28c102.svg?&style=for-the-badge&logo=Houzz&logoColor=white" alt="Portfolio"/></a>&nbsp;&nbsp;&nbsp;&nbsp; 
-	<a href="https://linkedin.com/in/dmitriy-kagno/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a 
+		href="https://DmitriyKagno.me" 
+		title="My Personal Website"
+		target="_blank" 
+		rel="noreferrer"
+	>
+		<img 
+			src="https://img.shields.io/badge/portfolio-%28c102.svg?&style=for-the-badge&logo=Houzz&logoColor=white"
+			alt="Portfolio"
+		/>
+	</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+	<a 
+		href="https://linkedin.com/in/dmitriy-kagno/" 
+		title="My Linkedin page"
+		target="_blank" 
+		rel="noreferrer"
+	>
+		<img 
+			src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" 
+			alt="Linkedin" 
+		/>
+	</a>&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 ### About me
