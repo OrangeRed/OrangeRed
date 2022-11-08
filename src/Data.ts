@@ -1,5 +1,6 @@
 export const SITE_TITLE = "Dmitriy Kagno"
-export const SITE_DESCRIPTION = "Dmitriy Kagno is a software engineer"
+export const SITE_DESCRIPTION =
+  "Software engineer, Typescript enthusiast, and avid Japanese learner."
 export const AVATAR = "/Avatar_Dmitriy_Kagno.png"
 
 // Icons from https://icon-sets.iconify.design/
@@ -27,7 +28,8 @@ export const ABOUT_ME = {
     "🌎 I am based in New York City.",
     "💻 I currently work @EcogyEnergy.",
     "🧪 I love science, tech and trying new things.",
-    "🇯🇵 I spend my weekends at Japanese meetups.",
+    "🇯🇵 I am learning Japanese in my free time.",
+    // "🇯🇵 I spend my weekends at Japanese meetups.",
     "🇦 I also use Arch by the way.",
   ],
   currentJob: {
