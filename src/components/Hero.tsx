@@ -1,6 +1,6 @@
 import { h } from "preact"
 
-import { ABOUT_ME, AVATAR as image } from "@src/Data"
+import { ABOUT_ME, AVATAR } from "@src/Data"
 const { description, name, currentJob } = ABOUT_ME
 
 const Hero = () => {
@@ -8,8 +8,8 @@ const Hero = () => {
     <section class="flex flex-col md:flex-row justify-between items-center px-3 mb-8 md:mt-8">
       <img
         class="h-72 w-72 m-8 rounded-full object-cover shadow-black shadow-2xl"
-        src={image.src}
-        alt="Dmitriy_Kagno_Avatar"
+        src={AVATAR}
+        alt="Dmitriy Kagno Avatar"
       />
 
       <div class="flex flex-col items-start w-full md:w-auto">

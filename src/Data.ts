@@ -1,5 +1,6 @@
-export const SITE_TITLE = "Dmitriy Kagno Software Engineer"
+export const SITE_TITLE = "Dmitriy Kagno"
 export const SITE_DESCRIPTION = "Dmitriy Kagno is a software engineer"
+export const AVATAR = "/Avatar_Dmitriy_Kagno.png"
 
 // Icons from https://icon-sets.iconify.design/
 export const SOCIAL_LINKS = [
@@ -11,7 +12,7 @@ export const SOCIAL_LINKS = [
   {
     title: "LinkedIn",
     icon: "fa-brands:linkedin-in",
-    url: "https://www.linkedin.com/in/dmitriy-kagno/",
+    url: "https://linkedin.com/in/dmitriy-kagno/",
   },
   {
     title: "Resume",
@@ -20,17 +21,13 @@ export const SOCIAL_LINKS = [
   },
 ]
 
-export const AVATAR = {
-  src: "/me/Dmitriy_Kagno_Avatar.png",
-}
-
 export const ABOUT_ME = {
   name: "Dmitriy Kagno",
   description: [
     "🌎 I am based in New York City.",
     "💻 I currently work @EcogyEnergy.",
     "🧪 I love science, tech and trying new things.",
-    "🇯🇵 I am studying Japanese in my free time.",
+    "🇯🇵 I spend my weekends at Japanese meetups.",
     "🇦 I also use Arch by the way.",
   ],
   currentJob: {
@@ -43,7 +40,7 @@ export const TECHNOLOGIES = [
   {
     title: "TypeScript",
     icon: "/icons/typescript.svg",
-    url: "https://www.typescriptlang.org/",
+    url: "https://typescriptlang.org/",
   },
   {
     title: "React",
@@ -58,7 +55,7 @@ export const TECHNOLOGIES = [
   {
     title: "Javascript",
     icon: "./icons/javascript.svg",
-    url: "https://www.javascript.com/",
+    url: "https://javascript.com/",
   },
   {
     title: "Astro",
@@ -81,7 +78,7 @@ export const TECHNOLOGIES = [
     url: "https://nodejs.org/en/",
   },
   {
-    title: "AWS",
+    title: "Serverless",
     icon: "/icons/amazon-aws.svg",
   },
 ]
@@ -96,14 +93,10 @@ export const PROJECTS = [
       //
       "React",
       "Material UI",
+      "Styled Components",
       "Node.js",
+      "Express",
     ],
-    // tags: [
-    //   "Allows users to extract words from images using OCR technology.",
-    //   "Uses Google Translate API to serve translations of extracted words.",
-    //   "React web application with Nodejs backend to handle server calls.",
-    //   "Front end designed using React Material UI and styled-components.",
-    // ],
   },
   {
     title: "Twenty Four",
@@ -113,13 +106,8 @@ export const PROJECTS = [
     tags: [
       //
       "Javascript",
+      "CSS",
       "Accessibility",
     ],
-    // tags: [
-    //   "Enables users to endlessly practice arithmetic with random number generation.",
-    //   "Uses backtracking to ensure solutions are straightforward and open-ended.",
-    //   "Built to be accessible on almost any device, computer or mobile.",
-    //   "Simple Javascript and CSS application hosted on Github.",
-    // ],
   },
 ]

@@ -6,6 +6,7 @@ const TechnologyLink = ({ tech }: { tech: typeof TECHNOLOGIES[number] }) => {
   return (
     <a
       href={tech.url ?? "/"}
+      title={tech.title ?? "Home"}
       target="_blank"
       rel="noreferrer"
       class="p-3 pr-20 gap-4 

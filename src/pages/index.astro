@@ -20,7 +20,7 @@ import Technology from "@src/components/Technology"
         SOCIAL_LINKS.map((link) => {
           return (
             <NavLinks newTab url={link.url}>
-              <Icon class="w-[20px] h-[20px] mr-2" name={link.icon} />
+              <Icon class="w-5 h-5 mr-2" name={link.icon} />
               <span class="hidden md:inline tracking-[0.2rem] font-semibold uppercase">
                 {link.title}
               </span>
@@ -73,10 +73,11 @@ import Technology from "@src/components/Technology"
             <Project project={project} client:visible>
               {project.githubUrl && (
                 <a
-                  class="z-20 w-6 text-zinc-100 hover:text-orange-400 hover:scale-110 transition-all ml-3"
                   href={project.githubUrl}
+                  title="Source Code"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="z-20 w-5 h-5 ml-3 text-zinc-100 hover:text-orange-400 focus:text-orange-400 hover:scale-110"
                 >
                   <Icon name="fa:github" />
                 </a>
@@ -84,10 +85,11 @@ import Technology from "@src/components/Technology"
 
               {project.liveUrl && (
                 <a
-                  class="z-20 w-6 text-zinc-100 hover:text-orange-400 hover:scale-110 transition-all ml-3"
                   href={project.liveUrl}
+                  title="Live Preview"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="z-20 w-5 h-5 ml-3 text-zinc-100 hover:text-orange-400 focus:text-orange-400 hover:scale-110"
                 >
                   <Icon name="fa-solid:external-link-alt" />
                 </a>

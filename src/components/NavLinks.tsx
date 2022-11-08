@@ -10,9 +10,10 @@ const NavLinks = ({
   return (
     <a
       href={url}
+      title={url}
       target={newTab ? "_blank" : ""}
       rel="noreferrer"
-      class="text-lg text-zinc-100 hover:text-orange-400 flex items-center justify-end transition"
+      class="flex items-center justify-end text-base text-zinc-100 hover:text-orange-400 focus:text-orange-400"
     >
       {children}
     </a>

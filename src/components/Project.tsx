@@ -41,7 +41,7 @@ const Project = ({
           })}
         </ul>
 
-        <p class="pt-3">{project.description}</p>
+        <p class="pt-3 z-20">{project.description}</p>
       </div>
     </div>
   )
