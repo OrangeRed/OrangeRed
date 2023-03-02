@@ -10,5 +10,4 @@ import preact from "@astrojs/preact"
 export default defineConfig({
   site: "https://dmitriykagno.me",
   integrations: [tailwind(), preact()],
-  base: "/OrangeRed",
 })
