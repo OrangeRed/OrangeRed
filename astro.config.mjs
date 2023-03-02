@@ -11,6 +11,6 @@ export default defineConfig({
   site: "https://dmitriykagno.me",
   integrations: [tailwind(), preact()],
   vite: {
-    base: "OrangeRed",
+    base: "/OrangeRed/",
   },
 })
