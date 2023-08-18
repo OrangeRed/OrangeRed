@@ -17,10 +17,6 @@ collections:
     editor:
       preview: false
     fields:
-      - label: Site Url
-        name: SITE_URL
-        required: true
-
       - label: Site Title
         name: SITE_TITLE
         required: true

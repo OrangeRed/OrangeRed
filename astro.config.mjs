@@ -1,10 +1,8 @@
 import { defineConfig } from "astro/config"
 import tailwind from "@astrojs/tailwind"
 
-import { SITE_URL } from "@content/metadata.json"
-
 // https://astro.build/config
 export default defineConfig({
-  site: SITE_URL,
+  site: "https://dmitriykagno.me",
   integrations: [tailwind({ applyBaseStyles: false })],
 })
