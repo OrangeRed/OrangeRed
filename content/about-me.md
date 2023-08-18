@@ -4,8 +4,8 @@ I am a huge [Typescript](/public/typescript-meme.png) enthusiast that subscribes
 which fully leverages the language server to generate auto-completions and code suggestions.
 
 I am currently on a quest to expand my horizons and try some new technologies. I recently built some stuff with
-[Sveltekit](https://kit.svelte.dev/) as well as [Astro](https://astro.build/) and so far I can say they are quite promising as
-lightweight alternatives to React and Next.js for building production ready applications.
+[Sveltekit](https://kit.svelte.dev/) as well as [Astro](https://astro.build/) and so far I can say they seem quite promising as
+lightweight alternatives for building production ready applications.
 
 I have also been learning Japanese as a hobby that I started in 2020 and my friends say that I have gotten pretty good.
 

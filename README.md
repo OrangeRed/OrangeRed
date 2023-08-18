@@ -1,6 +1,6 @@
 <h1 align="center">
 	<img src="./public/hand_wave.gif" width="40px" height="40px" /> 
-	Hi! I'm Dmitriy.
+	Hey there!
 </h1>
 
 <p align='center'> 
@@ -30,11 +30,17 @@
 
 ### About me
 
-- 🌎 I am based in New York City.
-- 💻 I currently work [@Ecogy Energy](https://ecogyenergy.com/).
-- 🧪 I love science, tech and trying new things.
-- 🇯🇵 I spend my weekends at Japanese meetups.
-- 🇦 I also use Arch by the way.
+I have been building websites, scripts and programs to solve problems that arise in my daily life since as early as 2017.
+
+I am a huge [Typescript](/public/typescript-meme.png) enthusiast that subscribes to building safe, performant and testable code
+which fully leverages the language server to generate auto-completions and code suggestions.
+
+I am currently on a quest to expand my horizons and try some new technologies. I recently built some stuff with
+[Sveltekit](https://kit.svelte.dev/) as well as [Astro](https://astro.build/) and so far I can say they are very nice to use.
+
+I have also been learning Japanese as a hobby that I started in 2020 and my friends say that I have gotten pretty good.
+
+I am also a New York City local and have lived here for most of my life. If you want to know some secret spots, send me a message and let's hang out some time 👍.
 
 <hr>
 
