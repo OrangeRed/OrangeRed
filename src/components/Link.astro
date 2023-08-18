@@ -1,0 +1,23 @@
+---
+interface Props {
+  url: string
+  title?: string
+  class?: string
+}
+
+const { url, title, class: classNames } = Astro.props
+---
+
+<a
+  href={url}
+  title={title ?? url}
+  target="_blank"
+  rel="noreferrer"
+  class:list={[
+    "flex items-center justify-center text-base text-zinc-100 duration-200 hover:text-orange-400 focus:text-orange-400",
+    classNames,
+  ]}
+>
+  <slot />
+  <slot name="text" />
+</a>

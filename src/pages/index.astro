@@ -2,125 +2,97 @@
 import Icon from "astro-icon"
 
 import BaseLayout from "@src/layouts/BaseLayout.astro"
+import Link from "@src/components/Link.astro"
+import Title from "@src/components/Title.astro"
+import Project from "@src/components/Project.astro"
 
-import NavLinks from "@src/components/NavLinks"
-import Title from "@src/components/Title"
-import Hero from "@src/components/Hero"
-import Technology from "@src/components/Technology"
-import Project from "@src/components/Project"
+import { AVATAR } from "@content/metadata.json"
+import { Content as AboutMe } from "@content/about-me.md"
 
-import { SOCIAL_LINKS, PROJECTS } from "@src/Data"
+/** @see `/public/decap-config.yml` for more details */
+const projects = await Astro.glob<{
+  title: string
+  createdAt: string
+  tags?: string[]
+  githubUrl?: string
+  liveUrl?: string
+}>("../../content/projects/*.md")
 ---
 
 <BaseLayout>
-  <!-- Header Section -->
-  <nav class="px-3">
-    <ul class="flex justify-end md:justify-start list-none gap-5 w-full">
-      {
-        SOCIAL_LINKS.map((link) => {
-          return (
-            <NavLinks newTab url={link.url}>
-              <Icon class="w-5 h-5 mr-2" name={link.icon} />
-              <span class="hidden md:inline tracking-[0.2rem] font-semibold uppercase">
-                {link.title}
-              </span>
-            </NavLinks>
-          )
-        })
-      }
-    </ul>
-  </nav>
+  <!-- About me Section -->
+  <section class="mb-8 flex w-full flex-col items-center justify-between px-3 md:mt-8 md:flex-row">
+    <!-- <img
+      class="m-8 h-72 w-72 rounded-full object-cover shadow-2xl shadow-black"
+      src={AVATAR}
+      alt="Dmitriy Kagno Avatar"
+    /> -->
 
-  <!-- Hero + About me Section -->
-  <Hero />
+    <about class="flex w-full flex-col items-start md:w-auto">
+      <head class="flex flex-col justify-start md:justify-center">
+        <hook class="text-2xl sm:flex sm:items-end sm:gap-2">
+          <span class="mb-2 flex items-end gap-2 sm:mb-0">
+            <img src="/hand_wave.gif" class="h-10 w-10" />
+             Hey there,
+          </span>
+           My name is
+          <span class="text-orange-400">Dmitriy</span>
+           aka
+        </hook>
 
-  <!-- Technologies Section -->
-  <section
-    class="flex flex-col justify-between py-6 px-3 mb-8 group/title relative"
-  >
-    <!-- Technologies Title -->
-    <h2 class="mb-4 text-3xl tracking-tight">
-      <Title title="Technologies" client:visible />
-    </h2>
-    <!-- Technologies Blurb -->
-    <p class="w-full mb-8 font-normal leading-7">
-      I love exploring new libraries, programming languages and frameworks.
-      <br />
-      Here is a list of technologies that I use for work and side projects.
-    </p>
+        <span
+          class="animate-gradient bg-gradient-to-r from-yellow-300 via-orange-400 to-orange-600 bg-[length:1000%] bg-clip-text py-2 pb-3 text-6xl text-transparent sm:text-7xl"
+        >
+          OrangeRed
+        </span>
+      </head>
 
-    <!-- Technologies -->
-    <Technology client:visible />
+      <h2 class="my-4 text-3xl tracking-tight">
+        <Title title="About me" />
+      </h2>
+
+      <article class="prose prose-invert prose-a:text-yellow-500 max-w-full">
+        <AboutMe />
+      </article>
+    </about>
   </section>
 
   <!-- Projects Section -->
-  <section class="pb-6 px-3 group/title">
-    <!-- Projects Title -->
-    <h2 class="mb-4 text-3xl tracking-tight">
-      <Title title="Projects" client:visible />
+  <section class="group/title my-10 px-3 pb-6">
+    <h2 class="text-3xl tracking-tight">
+      <Title title="Projects" />
     </h2>
-    <!-- Projects Blurb -->
-    <p class="w-full mb-8 font-normal leading-7">
+
+    <p class="mb-8 mt-4 w-full font-normal leading-7 text-zinc-100/90">
       I am a big advocate of learning by doing.
       <br />
-      Here are some of the projects that I have built in my spare time.
+       Here are some of the things that I have built in my spare time.
     </p>
-    <!-- Projects -->
-    <div class="grid grid-cols-1 gap-4">
+
+    <projects class="flex flex-col gap-4">
       {
-        PROJECTS.map((project) => {
-          return (
-            <Project project={project} client:visible>
-              {project.githubUrl && (
-                <a
-                  href={project.githubUrl}
-                  title="Source Code"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="z-20 w-5 h-5 ml-3 text-zinc-100 hover:text-orange-400 focus:text-orange-400 hover:scale-110"
-                >
-                  <Icon name="fa:github" />
-                </a>
+        projects
+          .sort((left, right) =>
+            new Date(left.frontmatter.createdAt) < new Date(right.frontmatter.createdAt) ? 1 : -1,
+          )
+          .map(({ frontmatter, Content }) => (
+            <Project title={frontmatter.title} tags={frontmatter.tags}>
+              {frontmatter.githubUrl && (
+                <Link url={frontmatter.githubUrl}>
+                  <Icon name="fa:github" class="z-20 h-5 w-5" />
+                </Link>
               )}
 
-              {project.liveUrl && (
-                <a
-                  href={project.liveUrl}
-                  title="Live Preview"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="z-20 w-5 h-5 ml-3 text-zinc-100 hover:text-orange-400 focus:text-orange-400 hover:scale-110"
-                >
-                  <Icon name="fa-solid:external-link-alt" />
-                </a>
+              {frontmatter.liveUrl && (
+                <Link url={frontmatter.liveUrl}>
+                  <Icon name="fa-solid:external-link-alt" class="z-20 h-5 w-5" />
+                </Link>
               )}
+
+              <Content slot="body" />
             </Project>
-          )
-        })
+          ))
       }
-    </div>
+    </projects>
   </section>
-
-  <!-- Footer Section -->
-  <footer class="px-3">
-    <ul
-      class="flex justify-end list-none gap-5 w-full border-t border-zinc-600 pt-3 mt-3"
-    >
-      {
-        SOCIAL_LINKS.map((link) => {
-          return (
-            <NavLinks newTab url={link.url}>
-              <Icon class="w-[20px] h-[20px] mr-2" name={link.icon} />
-            </NavLinks>
-          )
-        })
-      }
-    </ul>
-    <!-- Copyright -->
-    <div class="inline-flex justify-start w-full pt-3">
-      &copy; Copyright {new Date().getFullYear()} by Dmitriy Kagno.
-      <br />
-      All Rights Reserved.
-    </div>
-  </footer>
 </BaseLayout>

@@ -1,21 +1,36 @@
 ---
-import { AVATAR, SITE_DESCRIPTION, SITE_TITLE } from "@src/Data"
 import MetaTags from "@src/components/MetaTags.astro"
+import NavLinks from "@src/components/NavLinks.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Meta Tags -->
   <head>
-    <MetaTags
-      title={SITE_TITLE}
-      description={SITE_DESCRIPTION}
-      image={AVATAR}
-    />
+    <MetaTags />
     <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
+
+  <nav class="px-3">
+    <NavLinks
+      class="md:justify-start [&_span]:ml-2 [&_span]:hidden [&_span]:font-semibold [&_span]:uppercase [&_span]:tracking-[0.2rem] [&_span]:md:inline"
+    >
+      <span slot="github">github</span>
+      <span slot="linkedin">linkedin</span>
+      <span slot="resume">resume</span>
+    </NavLinks>
+  </nav>
 
   <body>
     <slot />
   </body>
+
+  <footer class="px-3">
+    <NavLinks class="mt-3 border-t border-zinc-600 pt-3" />
+
+    <copyright class="inline-flex w-full justify-start pt-3">
+      &copy; Copyright {new Date().getFullYear()} by Dmitriy Kagno.
+      <br />
+       All Rights Reserved.
+    </copyright>
+  </footer>
 </html>

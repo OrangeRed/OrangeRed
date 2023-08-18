@@ -1,17 +1,13 @@
 ---
-import { AVATAR, SITE_DESCRIPTION, SITE_TITLE } from "@src/Data"
 import MetaTags from "@src/components/MetaTags.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Meta Tags -->
   <head>
-    <MetaTags
-      title={SITE_TITLE}
-      description={SITE_DESCRIPTION}
-      image={AVATAR}
-    />
+    <MetaTags />
+
+    <!-- redirect to / -->
     <meta http-equiv="Refresh" content={`0; url=${Astro.site}`} />
   </head>
 </html>

@@ -1,48 +1,42 @@
 ---
 // Import the global.css file here so that it is included on
-// all pages through the use of the <Meta /> component.
+// all pages through the use of the <MetaTags /> component.
 import "../global.css"
 
-export interface Props {
-  title: string
-  description: string
-  image: string
-}
-
-const { title, description, image } = Astro.props
+import { SITE_TITLE, SITE_DESCRIPTION, BANNER } from "@content/metadata.json"
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+<link rel="icon" type="image/svg+xml" href="/media/favicon-32x32.png" />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Primary Meta Tags -->
-<title>{title}</title>
-<meta name="title" content={title} />
+<title>{SITE_TITLE}</title>
+<meta name="title" content={SITE_TITLE} />
 <meta name="author" content="Dmitriy Kagno" />
-<meta name="description" content={description} />
+<meta name="description" content={SITE_DESCRIPTION} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
-<meta property="og:site_name" content={title} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:title" content={SITE_TITLE} />
+<meta property="og:description" content={SITE_DESCRIPTION} />
+<meta property="og:site_name" content={SITE_TITLE} />
+<meta property="og:image" content={new URL(BANNER, Astro.url)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:title" content={SITE_TITLE} />
+<meta property="twitter:description" content={SITE_DESCRIPTION} />
+<meta property="twitter:image" content={new URL(BANNER, Astro.url)} />
 
 <style>
-  *,
+  :root,
   html,
   body {
-    @apply bg-zinc-800 text-zinc-100 max-w-screen-lg mx-auto py-2 md:px-6;
+    @apply mx-auto max-w-screen-lg bg-zinc-800 py-2 text-zinc-100 md:px-6;
   }
 </style>

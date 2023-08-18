@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("before:w-full", "before:opacity-100")
+      } else {
+        entry.target.classList.remove("before:w-full", "before:opacity-100")
+      }
+    })
+  })
+
+  const elements = document.getElementsByClassName("title")
+
+  for (const el of elements) {
+    observer.observe(el)
+  }
+</script>
+
+<span
+  class="title hover-underline group-hover/title:before:w-full group-hover/title:before:opacity-100"
+>
+  {title}
+</span>

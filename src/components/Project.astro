@@ -1,0 +1,66 @@
+---
+interface Props {
+  title: string
+  tags?: string[]
+}
+
+const { title, tags } = Astro.props
+---
+
+<script>
+  const elements = document.getElementsByClassName(
+    "white-shadow-container",
+  ) as HTMLCollectionOf<HTMLElement>
+
+  for (const el of elements) {
+    el.addEventListener("mousemove", (event) => {
+      const { clientX, clientY } = event as MouseEvent
+
+      const rect = el.getBoundingClientRect()
+
+      const x = clientX - rect.left
+      const y = clientY - rect.top
+
+      el.style.setProperty("--mouse-x", `${x}px`)
+      el.style.setProperty("--mouse-y", `${y}px`)
+    })
+  }
+</script>
+
+<container
+  class:list={[
+    "white-shadow-container group/card rounded-xl border-t-2 border-zinc-600",
+    "shadow-md shadow-black transition-all duration-500",
+    "hover:border-orange-400 hover:shadow-xl hover:shadow-black",
+  ]}
+>
+  <content class="flex flex-col gap-2 p-4">
+    <header class="flex items-center justify-between">
+      <h2
+        class="hover-underline text-xl font-semibold group-hover/card:before:w-full group-hover/card:before:opacity-100"
+      >
+        {title}
+      </h2>
+
+      <links class="flex items-center gap-x-3">
+        <slot />
+      </links>
+    </header>
+
+    <ul class="flex flex-wrap gap-3">
+      {
+        tags?.map((tag) => {
+          return (
+            <li class="flex cursor-default select-none rounded-md bg-zinc-700 px-2 py-0.5 text-sm shadow shadow-black">
+              ✹ {tag}
+            </li>
+          )
+        })
+      }
+    </ul>
+
+    <description class="z-20 pt-3 text-zinc-100/90">
+      <slot name="body" />
+    </description>
+  </content>
+</container>
