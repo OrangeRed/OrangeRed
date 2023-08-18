@@ -1,0 +1,89 @@
+backend:
+  # name: git-gateway
+  # repo: OrangeRed/OrangeRed
+  # branch: new-astro
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+
+media_folder: public/media
+public_folder: /media
+
+collections:
+  - label: Metadata
+    name: metadata
+    summary: Metadata
+    format: json
+    folder: content
+    editor:
+      preview: false
+    fields:
+      - label: Site Url
+        name: SITE_URL
+        required: true
+
+      - label: Site Title
+        name: SITE_TITLE
+        required: true
+
+      - label: Site Description
+        name: SITE_DESCRIPTION
+        required: true
+
+      - label: Resume Path
+        name: RESUME
+        required: true
+
+      - label: Avatar Path
+        name: AVATAR
+        required: true
+
+      - label: Banner Path
+        name: BANNER
+        required: true
+
+  - label: About
+    name: about
+    summary: About me
+    format: frontmatter
+    folder: content
+    fields:
+      - label: Body
+        name: body
+        widget: markdown
+        required: true
+
+  - label: Projects
+    name: projects
+    format: yaml-frontmatter
+    folder: content/projects
+    create: true
+    editor:
+      preview: false
+    sortable_fields:
+      - createdAt
+    fields:
+      - label: Created
+        name: createdAt
+        widget: datetime
+
+      - label: Title
+        name: title
+        widget: string
+        required: true
+
+      - label: Tags
+        name: tags
+        widget: list
+
+      - label: Github Url
+        name: githubUrl
+        widget: string
+
+      - label: Live Url
+        name: liveUrl
+        widget: string
+
+      - label: Body
+        name: body
+        widget: markdown
+        required: true
