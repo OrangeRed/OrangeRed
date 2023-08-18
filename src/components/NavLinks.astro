@@ -2,6 +2,8 @@
 import Link from "./Link.astro"
 import { Icon } from "astro-icon"
 
+import { RESUME } from "@content/metadata.json"
+
 interface Props {
   class?: string
 }
@@ -23,7 +25,7 @@ const { class: classNames } = Astro.props
   </Link>
 
   <!-- Resume -->
-  <Link url="/Resume_Dmitriy_Kagno.pdf" title="resume">
+  <Link url={RESUME} title="resume">
     <Icon class="h-5 w-5" name="fa:file" />
     <slot name="resume" slot="text" />
   </Link>
