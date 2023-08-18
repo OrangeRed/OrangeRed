@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: OrangeRed/OrangeRed
-  branch: new-new-astro
+  branch: master
   # name: proxy
   # proxy_url: http://localhost:8081/api/v1
 
