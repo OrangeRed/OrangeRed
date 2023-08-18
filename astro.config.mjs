@@ -1,13 +1,10 @@
 import { defineConfig } from "astro/config"
-
-// https://astro.build/config
 import tailwind from "@astrojs/tailwind"
 
-// https://astro.build/config
-import preact from "@astrojs/preact"
+import { SITE_URL } from "@content/metadata.json"
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://dmitriykagno.me",
-  integrations: [tailwind(), preact()],
+  site: SITE_URL,
+  integrations: [tailwind({ applyBaseStyles: false })],
 })
