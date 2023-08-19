@@ -1,13 +1,13 @@
 ---
-import Icon from "astro-icon"
-
-import BaseLayout from "@src/layouts/BaseLayout.astro"
-import Link from "@src/components/Link.astro"
-import Title from "@src/components/Title.astro"
-import Project from "@src/components/Project.astro"
+import BaseLayout from "src/layouts/BaseLayout.astro"
+import Link from "@components/Link.astro"
+import Title from "@components/Title.astro"
+import Project from "@components/Project.astro"
+import GithubIcon from "@components/icons/github.astro"
+import PreviewIcon from "@components/icons/preview.astro"
 
 import { AVATAR } from "@content/metadata.json"
-import { Content as AboutMe } from "@content/about-me.md"
+import { Content as AboutMeContent } from "@content/about-me.md"
 
 /** @see `/public/decap-config.yml` for more details */
 const projects = await Astro.glob<{
@@ -51,8 +51,8 @@ const projects = await Astro.glob<{
         <Title title="About me" />
       </h2>
 
-      <article class="prose prose-invert prose-a:text-yellow-500 max-w-full">
-        <AboutMe />
+      <article class="prose prose-invert max-w-full prose-a:text-yellow-500">
+        <AboutMeContent />
       </article>
     </about>
   </section>
@@ -79,13 +79,13 @@ const projects = await Astro.glob<{
             <Project title={frontmatter.title} tags={frontmatter.tags}>
               {frontmatter.githubUrl && (
                 <Link url={frontmatter.githubUrl}>
-                  <Icon name="fa:github" class="z-20 h-5 w-5" />
+                  <GithubIcon class="z-20 h-5 w-5" />
                 </Link>
               )}
 
               {frontmatter.liveUrl && (
                 <Link url={frontmatter.liveUrl}>
-                  <Icon name="fa-solid:external-link-alt" class="z-20 h-5 w-5" />
+                  <PreviewIcon class="z-20 h-5 w-5" />
                 </Link>
               )}
 

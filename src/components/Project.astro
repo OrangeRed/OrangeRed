@@ -50,6 +50,10 @@ const { title, tags } = Astro.props
     <ul class="flex flex-wrap gap-3">
       {
         tags?.map((tag) => {
+          if (tag === "") {
+            return null
+          }
+
           return (
             <li class="flex cursor-default select-none rounded-md bg-zinc-700 px-2 py-0.5 text-sm shadow shadow-black">
               ✹ {tag}

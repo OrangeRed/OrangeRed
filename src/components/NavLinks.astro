@@ -1,6 +1,8 @@
 ---
-import Link from "./Link.astro"
-import { Icon } from "astro-icon"
+import Link from "@components/Link.astro"
+import GithubIcon from "@components/icons/github.astro"
+import LinkedinIcon from "@components/icons/linkedin.astro"
+import FileIcon from "@components/icons/pdf.astro"
 
 import { RESUME } from "@content/metadata.json"
 
@@ -14,19 +16,19 @@ const { class: classNames } = Astro.props
 <ul class:list={["flex w-full list-none justify-end gap-5", classNames]}>
   <!-- Github -->
   <Link url="https://github.com/OrangeRed" title="github">
-    <Icon class="h-5 w-5" name="fa:github" />
+    <GithubIcon class="h-5 w-5" />
     <slot name="github" slot="text" />
   </Link>
 
   <!-- Linkedin -->
   <Link url="https://linkedin.com/in/dmitriy-kagno/" title="linkedin">
-    <Icon class="h-5 w-5" name="fa-brands:linkedin-in" />
+    <LinkedinIcon class="h-5 w-5" />
     <slot name="linkedin" slot="text" />
   </Link>
 
   <!-- Resume -->
   <Link url={RESUME} title="resume">
-    <Icon class="h-5 w-5" name="fa:file" />
+    <FileIcon class="h-5 w-5" />
     <slot name="resume" slot="text" />
   </Link>
 </ul>
