@@ -13,7 +13,7 @@
     /* This type of css can't happen with tailwind */
     background: radial-gradient(
       800px circle at var(--mouse-x) var(--mouse-y),
-      rgb(255, 255, 255, 0.1),
+      rgb(255, 255, 255, 0.2),
       transparent 40%
     );
   }
