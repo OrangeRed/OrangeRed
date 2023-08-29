@@ -49,8 +49,8 @@ For the past three years I have also been learning Japanese as a hobby and I am 
 looking for people to talk to, <br>
 もし興味があれば日本語で話しましょう！
 
-I am also a NYC local, having lived here for most of my life so if you are interested
-in exploring the city, send me a message and let's hang out some time 👍.
+I am also a NYC local so if you are interested in exploring the city, send me a message
+and let's hang out some time 👍.
 
 <hr>
 
