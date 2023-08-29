@@ -56,6 +56,7 @@ in exploring the city, send me a message and let's hang out some time 👍.
 
 ### Technologies
 
+<p>
 <img src="./public/icons/typescript.svg" alt="TypeScript" title="TypeScript" width="36" />
 <img src="./public/icons/react.svg" alt="React" title="React" width="36" />
 <img src="./public/icons/tailwindcss.svg" alt="TailwindCSS" title="TailwindCSS" width="36" />
@@ -66,3 +67,4 @@ in exploring the city, send me a message and let's hang out some time 👍.
 <img src="./public/icons/nodejs.svg" alt="Node.js" title="Node.JS" width="36" />
 <img src="./public/icons/lambda.svg" alt="Serverless" title="Serverless" width="32" />
 <img src="./public/icons/archlinux-256.svg" alt="Arch Linux" title="Arch Linux" width="36" />
+<p>
