@@ -14,16 +14,16 @@
     "format": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^4.0.0",
-    "@tailwindcss/typography": "^0.5.9",
-    "@typescript-eslint/parser": "^6.4.0",
-    "astro": "^2.10.9",
-    "eslint": "^8.47.0",
-    "eslint-plugin-astro": "^0.28.0",
-    "prettier": "^3.0.2",
-    "prettier-plugin-astro": "^0.11.1",
-    "prettier-plugin-tailwindcss": "^0.5.3",
-    "tailwindcss": "^3.3.3",
-    "typescript": "^5.1.6"
+    "@astrojs/tailwind": "^5.0.2",
+    "@tailwindcss/typography": "^0.5.10",
+    "@typescript-eslint/parser": "^6.9.1",
+    "astro": "^3.4.0",
+    "eslint": "^8.52.0",
+    "eslint-plugin-astro": "^0.29.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.1",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
   }
 }
